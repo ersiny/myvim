@@ -1,7 +1,10 @@
-filetype off
 call pathogen#runtime_append_all_bundles()
 
+syntax on
+filetype on  
+filetype plugin on  
 filetype plugin indent on
+
 set nocompatible
 set modelines=0
 
@@ -24,6 +27,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+"set colorcolumn=85
 "set relativenumber
 "set undofile
 
@@ -71,7 +75,6 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-syntax on
 au BufRead,BufNewFile *.html set filetype=php
 :autocmd FileType php noremap <C-L> :!$HOME/bin/php -l %<CR>
 ":ab vim <tt id="vim"><b>vim</b></tt>
