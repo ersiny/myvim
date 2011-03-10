@@ -7,11 +7,10 @@ filetype plugin indent on
 
 set nocompatible
 set modelines=0
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+set number
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 set encoding=utf-8
 set scrolloff=3
@@ -27,9 +26,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-"set colorcolumn=85
-"set relativenumber
-"set undofile
 
 set ignorecase
 set smartcase
